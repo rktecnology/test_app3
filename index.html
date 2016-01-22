@@ -12,6 +12,7 @@
 			font-family:"Arial", sans-serif;
 			text-align: center;
 			margin: 0 auto;
+			/*background: gray;*/
 		}
 		form{
 			padding: 2em 0;
@@ -34,6 +35,38 @@
 			font-size: 1em;
 			/*border-radius: 10px;*/
 		}
+		.Content{
+			background: gray;
+			padding: 1em 0 ;
+		}
+		.Content__box{
+			text-align: center;
+			margin: 0 auto;
+		}
+		.Content_item{
+			background: orange;
+			display: block;
+			width: 80%;
+			text-align: center;
+			padding: 15px;
+			margin: 2em auto;
+		}
+		.Content_item p{
+			margin: 0 auto;
+			text-align: center;
+			max-width: 500px;
+		}
+
+@media (min-width: 700px){
+	.Content_item{
+		display: inline-block;
+		width: 30%;
+		margin: .2em;
+	}
+}
+
+
+
 	</style>
 </head>
 <body>
@@ -46,6 +79,31 @@
 	<input id="txt_data_sexo" type="text" placeholder="¿hombre o mujer?">
 	<input id="btn_send" type="button" value="Publicar">
 </form>
+<section class="Content">
+	<div class="Content__box">
+		<article class="Content_item">
+			<figure>
+				<img src="./image/networking.png" alt="facebook" width="200">
+			</figure>
+			<h2>Facebook</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis quo fuga eaque, provident, doloribus, id delectus sapiente harum, repellat et sequi voluptas. Necessitatibus eaque dolor, sint? Eos incidunt deserunt cupiditate.</p>
+		</article>
+		<article class="Content_item">
+			<figure>
+				<img src="./image/networking.png" alt="facebook" width="200">
+			</figure>
+			<h2>Youtube</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis quo fuga eaque, provident, doloribus, id delectus sapiente harum, repellat et sequi voluptas. Necessitatibus eaque dolor, sint? Eos incidunt deserunt cupiditate.</p>
+		</article>
+		<article class="Content_item">
+			<figure>
+				<img src="./image/networking.png" alt="facebook" width="200">
+			</figure>
+			<h2>Twitter</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis quo fuga eaque, provident, doloribus, id delectus sapiente harum, repellat et sequi voluptas. Necessitatibus eaque dolor, sint? Eos incidunt deserunt cupiditate.</p>
+		</article>
+	</div>
+</section>
 <script type="text/javascript" src="./js/code.js"></script>
 </body>
 </html>
